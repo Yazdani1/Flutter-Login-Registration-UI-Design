@@ -113,7 +113,47 @@ class _HomeState extends State<Home> {
 
             ),
           ),//container login
-          
+
+          SizedBox(height: 10.0,),
+
+          Container(
+            height: 40.0,
+            color: Colors.transparent,
+            child: Container(
+              decoration: new BoxDecoration(
+                border: Border.all(
+                  color: Colors.black,
+                  style: BorderStyle.solid,
+                  width: 2.0
+                ),
+                color: Colors.transparent,
+                borderRadius: BorderRadius.circular(20.0),
+              ),//Box decoration
+              child: new Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+
+                  new Center(
+                    child: Icon(Icons.title)
+                  ),
+                  SizedBox(height: 10.0,),
+                  new Center(
+                    child: new Text("Login With Facebook",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black
+                    ),
+                    ),
+                  )
+
+                ],
+              ),
+
+
+            ),
+
+          )
+
 
 
         ],
