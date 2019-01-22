@@ -9,6 +9,8 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+
+      resizeToAvoidBottomPadding: false,
       body: new Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -119,6 +121,7 @@ class _HomeState extends State<Home> {
           Container(
             height: 40.0,
             color: Colors.transparent,
+            margin: EdgeInsets.all(10.0),
             child: Container(
               decoration: new BoxDecoration(
                 border: Border.all(
@@ -145,15 +148,33 @@ class _HomeState extends State<Home> {
                     ),
                     ),
                   )
-
                 ],
               ),
-
-
             ),
+          ),//Container
 
+          SizedBox(height: 10.0,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Center(
+                child: new Text("Don't have Account?",
+                style: TextStyle(fontSize: 20.0),
+                ),
+              ),
+              SizedBox(height: 10.0,),
+              InkWell(
+                onTap: (){},
+                child: new Text("Register here",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.green
+                ),),
+              )
+
+
+            ],
           )
-
 
 
         ],
